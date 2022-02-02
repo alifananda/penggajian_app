@@ -8,7 +8,7 @@
     <div class="card" style="width: 60%; margin-bottom: 100px;">
         <div class="card-body">
             <?php foreach ($jabatan as $j): ?>
-            <form action="<?= base_url('admin/DataJabatan/updateData') ?>" method="POST">
+            <form action="<?= base_url('admin/DataJabatan/updateDataAksi') ?>" method="POST">
                 <div class="form-group">
                     <label for="">Nama Jabatan</label>
                     <input type="text" name="nama_jabatan" class="form-control" value="<?= $j->nama_jabatan?>">

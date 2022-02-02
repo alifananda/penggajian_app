@@ -73,7 +73,7 @@ class DataJabatan extends CI_Controller {
         $this->_rules();
 
         // apabila form validation false, maka kembalikan ke function tambah data
-        if($this->form_validation->run() == TRUE){
+        if($this->form_validation->run() == FALSE){
             $this->updateData();
         }else{
             $id                = $this->input->post('id_jabatan');
