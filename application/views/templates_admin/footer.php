@@ -3,7 +3,7 @@
       <footer class="sticky-footer bg-white fixed-bottom">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; PT. Maju Mundur Asik</span>
+            <span>Copyright &copy; PT. Tunas Ridean</span>
           </div>
         </div>
       </footer>

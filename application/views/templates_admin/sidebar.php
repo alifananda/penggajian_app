@@ -103,7 +103,7 @@
           </button>
 
           <!-- Topbar Search -->
-          <h4 class="font-weight-bold">PT. MAJU JAYA SEJAHTERA</h4>
+          <h4 class="font-weight-bold">PT. TUNAS RIDEAN</h4>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
