@@ -31,6 +31,14 @@
             <td><?= $p->tanggal_masuk ?></td>
             <td><?= $p->status ?></td>
             <td><img style="width: 65px;" src="<?= base_url().'assets/photo/'.$p->foto ?>"></td>
+            <td>
+                    <center>
+                        <a class="btn btn-sm btn-primary" href="<?= base_url('admin/DataPegawai/updateData/'.$p->id_pegawai) ?>"> 
+                        <i class="fas fa-edit"></i></a>
+                        <a onclick="return confirm('Yakin Hapus')" class="btn btn-sm btn-danger" href="<?= base_url('admin/DataPegawai/deleteData/'.$p->id_pegawai) ?>"> 
+                        <i class="fas fa-trash"></i></a>
+                    </center>
+                </td>
         </tr>
         <?php endforeach; ?>
     </table> 
