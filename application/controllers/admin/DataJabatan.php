@@ -93,15 +93,17 @@ class DataJabatan extends CI_Controller {
                 'id_jabatan' => $id
             );
 
+            var_dump($where);
+            var_dump($data);
             // data akan dimasukkan ke data_jabatan
-            $this->PenggajianModel->update_data('data_jabatan',$data,$where);
-            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Data berhasil diupdate</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-            </div>');
-            redirect('admin/DataJabatan');
+            // $this->PenggajianModel->update_data('data_jabatan',$data,$where);
+            // $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            // <strong>Data berhasil diupdate</strong>
+            // <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            // <span aria-hidden="true">&times;</span>
+            // </button>
+            // </div>');
+            // redirect('admin/DataJabatan');
 
         }
     }

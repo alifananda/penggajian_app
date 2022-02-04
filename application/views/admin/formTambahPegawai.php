@@ -12,10 +12,12 @@
                 <div class="form-group">
                     <label>NIK</label>
                     <input type="number" name="nik" class="form-control">
+                    <?= form_error('nik','<div class="text-small text-danger"></div>')?>
                 </div>
                 <div class="form-group">
                     <label>Nama Pegawai</label>
-                    <input type="number" name="nama_pegawai" class="form-control">
+                    <input type="text" name="nama_pegawai" class="form-control">
+                    <?= form_error('nama_pegawai','<div class="text-small text-danger"></div>')?>
                 </div>
                 <div class="form-group">
                     <label>Jenis Kelamin</label>
@@ -24,6 +26,7 @@
                         <option value="Laki-Laki">Laki-Laki</option>
                         <option value="Perempuan">Perempuan</option>
                     </select>
+                    <?= form_error('jenis_kelamin','<div class="text-small text-danger"></div>')?>
                 </div>
                 <div class="form-group">
                     <label>Jabatan</label>
@@ -33,6 +36,12 @@
                         <option value="<?= $j->nama_jabatan ?>"><?= $j->nama_jabatan ?></option>
                         <?php endforeach; ?>
                     </select>
+                    <?= form_error('jabatan','<div class="text-small text-danger"></div>')?>
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Masuk</label>
+                    <input type="date" name="tanggal_masuk" class="form-control">
+                    <?= form_error('tanggal_masuk','<div class="text-small text-danger"></div>')?>
                 </div>
                 <div class="form-group">
                     <label>Status</label>
@@ -41,6 +50,7 @@
                         <option value="Pegawai Tetap">Pegawai Tetap</option>
                         <option value="Pegawai Tidak Tetap">Pegawai Tidak Tetap</option>
                     </select>
+                    <?= form_error('status','<div class="text-small text-danger"></div>')?>
                 </div>
                 <div class="form-group">
                     <label>Foto</label>
