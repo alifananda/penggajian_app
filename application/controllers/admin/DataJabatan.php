@@ -18,7 +18,7 @@ class DataJabatan extends CI_Controller {
         $data['title'] = "Tambah Data Jabatan";
         $this->load->view('templates_admin/header', $data);
         $this->load->view('templates_admin/sidebar');
-        $this->load->view('admin/tambahDataJabatan', $data);
+        $this->load->view('admin/formTambahDataJabatan', $data);
         $this->load->view('templates_admin/footer');
     }
 
